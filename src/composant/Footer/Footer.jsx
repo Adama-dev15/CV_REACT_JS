@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
+import initAOS from "../../Animation";
 
 const Footer = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   useEffect(() => {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 200) {
@@ -27,7 +32,10 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+      <div
+        className="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
+        data-aos="fade-up"
+      >
         <div className="container text-center py-5">
           <div className="d-flex justify-content-center mb-4">
             <a className="btn btn-light btn-social mr-2" href="#">

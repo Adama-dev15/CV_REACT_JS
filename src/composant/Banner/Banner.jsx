@@ -2,9 +2,14 @@ import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
 import $ from "jquery";
 import VideoModal from "../VidoeModal/VideoModal";
+import initAOS from "../../Animation";
 //import VideoModal from "./VideoModal"; // Import du composant VideoModal
 
 const Banner = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   useEffect(() => {
     if ($(".typed-text-output").length === 1) {
       var typed_strings = $(".typed-text").text();
@@ -31,6 +36,7 @@ const Banner = () => {
         className="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
         id="home"
         style={{ minHeight: "100vh" }}
+        data-aos="fade-up"
       >
         <div className="container">
           <div className="row align-items-center">

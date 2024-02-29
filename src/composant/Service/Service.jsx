@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import initAOS from "../../Animation";
 
 const Service = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   return (
     <div>
-      <div className="container-fluid pt-5" id="service">
+      <div className="container-fluid pt-5" id="service" data-aos="fade-up">
         <div className="container">
           <div className="position-relative d-flex align-items-center justify-content-center">
             <h1

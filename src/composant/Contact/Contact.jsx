@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import initAOS from "../../Animation";
 
 const Contact = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
   return (
     <div>
-      <div className="container-fluid py-5" id="contact">
+      <div className="container-fluid py-5" id="contact" data-aos="fade-up">
         <div className="container">
           <div className="position-relative d-flex align-items-center justify-content-center">
             <h1

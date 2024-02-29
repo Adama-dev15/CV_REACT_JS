@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
+import initAOS from "../../Animation";
 
 const Testimonial = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   return (
     <div>
-      <div className="container-fluid py-5" id="testimonial">
+      <div className="container-fluid py-5" id="testimonial" data-aos="fade-up">
         <div className="container">
           <div className="position-relative d-flex align-items-center justify-content-center">
             <h1

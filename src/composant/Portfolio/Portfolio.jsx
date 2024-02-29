@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import initAOS from "../../Animation";
 
 const Portfolio = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   return (
     <div>
       <div className="container-fluid pt-5 pb-3" id="portfolio">
@@ -16,7 +21,7 @@ const Portfolio = () => {
               My Portfolio
             </h1>
           </div>
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-12 text-center mb-2">
               <ul className="list-inline mb-4" id="portfolio-flters">
                 <li
@@ -46,7 +51,7 @@ const Portfolio = () => {
               </ul>
             </div>
           </div>
-          <div className="row portfolio-container">
+          <div className="row portfolio-container" data-aos="fade-up">
             <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
               <div className="position-relative overflow-hidden mb-2">
                 <img

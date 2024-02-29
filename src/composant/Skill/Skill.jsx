@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import initAOS from "../../Animation";
 
 const Skill = () => {
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   return (
     <div>
       <div className="container-fluid py-5" id="skill">
@@ -17,7 +22,7 @@ const Skill = () => {
             </h1>
           </div>
           <div className="row align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-up">
               <div className="skill mb-4">
                 <div className="d-flex justify-content-between">
                   <h6 className="font-weight-bold">HTML</h6>
@@ -64,7 +69,7 @@ const Skill = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-up">
               <div className="skill mb-4">
                 <div className="d-flex justify-content-between">
                   <h6 className="font-weight-bold">Javascript</h6>
