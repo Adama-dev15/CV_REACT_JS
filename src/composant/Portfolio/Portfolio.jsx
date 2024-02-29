@@ -21,36 +21,7 @@ const Portfolio = () => {
               My Portfolio
             </h1>
           </div>
-          <div className="row" data-aos="fade-up">
-            <div className="col-12 text-center mb-2">
-              <ul className="list-inline mb-4" id="portfolio-flters">
-                <li
-                  className="btn btn-sm btn-outline-primary m-1 active"
-                  data-filter="*"
-                >
-                  All
-                </li>
-                <li
-                  className="btn btn-sm btn-outline-primary m-1"
-                  data-filter=".first"
-                >
-                  Design
-                </li>
-                <li
-                  className="btn btn-sm btn-outline-primary m-1"
-                  data-filter=".second"
-                >
-                  Development
-                </li>
-                <li
-                  className="btn btn-sm btn-outline-primary m-1"
-                  data-filter=".third"
-                >
-                  Marketing
-                </li>
-              </ul>
-            </div>
-          </div>
+
           <div className="row portfolio-container" data-aos="fade-up">
             <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
               <div className="position-relative overflow-hidden mb-2">

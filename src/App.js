@@ -1,18 +1,3 @@
-//Template Javascript
-//import "./js/main.js";
-
-//import "./lib/typed/typed.min.js";
-//import "./lib/easing/easing.min.js";
-//import "./lib/waypoints/waypoints.min.js";
-//import "./lib/owlcarousel/owl.carousel.min.js";
-//import "./lib/isotope/isotope.pkgd.min.js";
-//import "./lib/lightbox/js/lightbox.min.js";
-
-//import "./mail/jqBootstrapValidation.min.js";
-//import "./mail/contact.js";
-
-//import "./lib/owlcarousel/assets/owl.carousel.min.css";
-//import "./lib/lightbox/css/lightbox.min.css";
 import "./css/style.css";
 
 import About from "./composant/About/About";
